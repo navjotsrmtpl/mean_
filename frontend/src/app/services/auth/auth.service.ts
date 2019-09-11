@@ -24,20 +24,20 @@ export class AuthService {
   registerUser(user){
     let headers= new HttpHeaders();
     headers.append('Content-type','application/json');
-    return this.http.post('http://localhost:3000/users/register',user,{headers:headers})
+    return this.http.post('https://shielded-spire-25562.herokuapp.com/users/register',user,{headers:headers})
     .pipe(map(res=>res))
   }
   image(user){
     let headers= new HttpHeaders();
     headers.append('Content-type','application/json');
-    return this.http.post('http://localhost:3000/users/image',user,{headers:headers})
+    return this.http.post('https://shielded-spire-25562.herokuapp.com/users/image',user,{headers:headers})
     .pipe(map(res=>res))
   }
 
   authenticateUser(user){
     let headers= new HttpHeaders();
     headers.append('Content-type','application/json');
-    return this.http.post('http://localhost:3000/users/authenticate',user,{headers:headers})
+    return this.http.post('https://shielded-spire-25562.herokuapp.com/users/authenticate',user,{headers:headers})
     .pipe(map(res=>res))
   }
 
@@ -53,7 +53,7 @@ export class AuthService {
     .set("Content-Type", 'application/json');
     console.log(this.authToken);
     
-    return this.http.get('http://localhost:3000/users/profile', {headers})
+    return this.http.get('https://shielded-spire-25562.herokuapp.com/users/profile', {headers})
     .pipe(map(res=>res))
     
     

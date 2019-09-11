@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { FileUploader, FileSelectDirective } from 'ng2-file-upload/ng2-file-upload';
 
-const URL = 'http://localhost:3000/users/image';
+const URL = 'https://shielded-spire-25562.herokuapp.com//users/image';
 
 @Component({
   selector: 'app-register',
