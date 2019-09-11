@@ -1,4 +1,4 @@
 module.exports ={
-    database: 'mongodb://shielded-spire-25562.herokuapp.com//meanauth',
+    database: 'mongodb://https://shielded-spire-25562.herokuapp.com//meanauth',
     secret: 'mysecret'
 }
